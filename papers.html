@@ -67,10 +67,10 @@
 				
 				<div class="nav-search">
 					
-					<form method="post" action="abstracts.html" class="search-form">
+					<form class="search-form" action="abstracts.html">
 						
 						<div class="input-group">
-							<input type="text" class="form-control" placeholder="Search" required>
+							<input type="text" class="form-control" name="search_keyword" placeholder="Search" required>
 							<div class="input-group-append">
 								<a href="#advanced-search" class="btn btn-outline-danger work-content" type="button">Advanced</a>
 								<button type="submit" class="btn btn-danger" type="button">Search</button>
@@ -87,21 +87,21 @@
 
 					<hr>
 
-					<form method="post" action="abstracts.html" class="search-form">
+					<form class="search-form" action="abstracts.html">
 
 						<div class="form-group">
 							<label>Number of Pages:</label>
-							<input type="number" class="form-control" placeholder="Number of Pages" required="required">
+							<input type="number" class="form-control" name="no_of_pages" placeholder="Number of Pages" required="required">
 						</div>
 
 						<div class="form-group">
 							<label>Estimated Time: (mm)</label>
-							<input type="number" class="form-control" placeholder="Estimated Time" required="required">
+							<input type="number" class="form-control" name="estimated_time" placeholder="Estimated Time" required="required">
 						</div>
 
 						<div class="form-group">
 							<label>Processing Mode</label>
-							<select class="form-control">
+							<select class="form-control" name="processing_mode">
 								<option value="Now" selected>Now</option>
 								<option value="Batch">Batch</option>
 							</select>
